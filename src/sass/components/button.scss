@@ -1,23 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@500&display=swap');
+
 $color-button: rgba(27, 117, 187, 1);
+
+//@import "../components/fonts.scss";
 
 .button{
     font-family: 'Gelasio';
     font-size: 15px;
     min-width: 100px;
-    max-width: 200px;
     //width: 30%; // чтобы убрать переполнение, уберем H и W
     //height: 57px; //и ставим паддинги и max-width
-    padding: 15px 30px;//в общем, у ссылки преобладают пэддинги и за рзмер кнопки тоже они отвечают,  
-    gap: 10px;          //а у BUTTON W и H роль играют
+    padding: 15px 30px;//в общем, у ссылки преобладают пэддинги и за размер кнопки тоже они отвечают,         //а у BUTTON W и H роль играют
     color: white;
-    overflow: hidden;//
-    word-wrap: break-word;//
     text-decoration: none;
-    outline: none;
-    border-width: 2px 0;
-    border-style: solid none;
-    border-color: $color-button;
+    border-style: solid none;//не могу эту убрать, т.к. меняется внешность 
+    border-color: $color-button;//кнопки(именно button) появляются эти рамки
     border-radius: 6px;
     background-color:$color-button;
-    transition: 0.2s;
 }
